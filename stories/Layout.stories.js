@@ -4,5 +4,5 @@ import Layout from '../src/components/Layout'
 
 storiesOf('components/Layout', module)
   .add('default', () => (
-    <Layout />
+    <Layout>I‘m inside layout</Layout>
   ))

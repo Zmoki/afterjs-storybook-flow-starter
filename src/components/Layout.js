@@ -1,7 +1,15 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 
-const Layout = () => (
-  <div>I‘m layout</div>
+const Layout = ({children}) => (
+  <Fragment>
+    <header>
+      header
+    </header>
+    <main>{children}</main>
+    <footer>
+      footer
+    </footer>
+  </Fragment>
 )
 
 export default Layout
