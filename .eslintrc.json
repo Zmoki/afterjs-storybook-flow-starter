@@ -12,6 +12,6 @@
     "node": true,
     "es6": true
   },
-  "plugins": ["react"],
-  "extends": ["uploadcare", "plugin:react/recommended"]
+  "plugins": ["react", "flowtype"],
+  "extends": ["uploadcare", "plugin:react/recommended", "plugin:flowtype/recommended"]
 }
