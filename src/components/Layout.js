@@ -1,6 +1,12 @@
+/* @flow */
 import React, {Fragment} from 'react'
+import type {Node} from 'react'
 
-const Layout = ({children}) => (
+type Props = {
+  children?: Node,
+}
+
+const Layout = ({children}: Props) => (
   <Fragment>
     <header>
       header

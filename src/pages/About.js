@@ -1,13 +1,14 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
+import Layout from '../components/Layout'
 
 class About extends Component {
   render() {
     return (
-      <main>
+      <Layout>
         <h1>About</h1>
         <Link to='/'>Home -></Link>
-      </main>
+      </Layout>
     )
   }
 }
