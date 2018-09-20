@@ -1,6 +1,7 @@
 import express from 'express'
 import {render} from '@jaredpalmer/after'
 import routes from './routes'
+import Document from './Document'
 
 const assets = require(process.env.RAZZLE_ASSETS_MANIFEST)
 
@@ -14,6 +15,7 @@ server
       const html = await render({
         req,
         res,
+        document: Document,
         routes,
         assets,
         // Anything else you add here will be made available
