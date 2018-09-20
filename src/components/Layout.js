@@ -1,16 +1,21 @@
 /* @flow */
 import React, {Fragment} from 'react'
+import styled from 'styled-components'
 import type {Node} from 'react'
 
 type Props = {
   children?: Node,
 }
 
+const Header = styled.header`
+  background: #ccc;
+`
+
 const Layout = ({children}: Props) => (
   <Fragment>
-    <header>
+    <Header>
       header
-    </header>
+    </Header>
     <main>{children}</main>
     <footer>
       footer
