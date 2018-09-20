@@ -21,7 +21,7 @@ if (module.hot) {
   logger.info('✅  Server-side HMR Enabled!')
 
   module.hot.accept('./server', () => {
-    logger.log('🔁  HMR Reloading `./server`...')
+    logger.info('🔁  HMR Reloading `./server`...')
     server.removeListener('request', currentApp)
     const newApp = require('./server').default
 

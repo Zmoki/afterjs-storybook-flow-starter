@@ -7,7 +7,7 @@ class About extends Component {
     return (
       <Layout>
         <h1>About</h1>
-        <Link to='/'>Home -></Link>
+        <Link to='/'>Go to Home</Link>
       </Layout>
     )
   }
