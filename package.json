@@ -4,8 +4,9 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint .",
-    "start": "razzle start",
-    "build": "razzle build",
+    "build:config": "node ./scripts/build-config.js",
+    "start": "npm run build:config && razzle start",
+    "build": "npm run build:config && razzle build",
     "test": "razzle test --env=jsdom",
     "start:prod": "NODE_ENV=production node build/server.js",
     "storybook": "start-storybook -p 6006 -c ./scripts/.storybook",
