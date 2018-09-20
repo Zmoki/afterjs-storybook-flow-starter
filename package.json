@@ -1,6 +1,6 @@
 {
-  "name": "webclient-frontend-dashboard",
-  "version": "2.4.0",
+  "name": "afterjs-storybook-flow-starter",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "lint": "eslint .",
