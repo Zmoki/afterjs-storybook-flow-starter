@@ -1,24 +1,27 @@
 import app from './server'
 import http from 'http'
+import createLogger from '../utils/create-logger'
 import {PORT} from './config.private'
+import {LOG_LEVEL} from './config.public'
 
+const logger = createLogger(LOG_LEVEL)
 const server = http.createServer(app)
 
 let currentApp = app
 
 server.listen(PORT, error => {
   if (error) {
-    console.log(error)
+    logger.error(error)
   }
 
-  console.log('🚀 started')
+  logger.info(`🚀 started on ${PORT} port`)
 })
 
 if (module.hot) {
-  console.log('✅  Server-side HMR Enabled!')
+  logger.info('✅  Server-side HMR Enabled!')
 
   module.hot.accept('./server', () => {
-    console.log('🔁  HMR Reloading `./server`...')
+    logger.log('🔁  HMR Reloading `./server`...')
     server.removeListener('request', currentApp)
     const newApp = require('./server').default
 

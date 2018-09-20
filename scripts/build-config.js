@@ -1,5 +1,6 @@
 const fs = require('fs')
 const path = require('path')
+const logger = require('../utils/create-logger')('info')
 const defaultConfig = require('../configs/config')
 
 const LOCAL_CONFIG_PATH = path.join(process.cwd(), 'configs', 'config.local.js')
@@ -29,8 +30,8 @@ else {
 
 fs.writeFileSync(PRIVATE_CONFIG_PATH, JSON.stringify(config.private))
 
-console.log('Private config file created.')
+logger.info('Private config file created.')
 
 fs.writeFileSync(PUBLIC_CONFIG_PATH, JSON.stringify(config.public))
 
-console.log('Public config file created.')
+logger.info('Public config file created.')
