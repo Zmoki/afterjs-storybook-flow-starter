@@ -9,3 +9,4 @@ build
 public/static
 .env.*.local
 src/config.*.json
+configs/config.local.js

@@ -17,3 +17,6 @@ Or run storybook:
 ```bash
 npm run storybook
 ```
+
+If you want to change default config, copy `./configs/config.local.example.js`
+to `./configs/config.local.js` and edit.
