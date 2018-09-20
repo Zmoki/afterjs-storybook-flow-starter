@@ -1,21 +1,19 @@
-# Razzle x After.js
+# Razzle x After.js x Storybook x Flow
 
 ## How to use
 
-Download the example [or clone the whole project](https://github.com/jaredpalmer/razzle.git):
-
-```bash
-curl https://codeload.github.com/jaredpalmer/razzle/tar.gz/master | tar -xz --strip=2 razzle-master/examples/with-afterjs
-cd with-afterjs
-```
+Download or clone this repo. Change origin to your own.
+Rename a package name. Commit and push to your repo.
 
 Install it and run:
 
 ```bash
-yarn install
-yarn start
+npm install
+npm start
 ```
 
-## Idea behind the example
+Or run storybook:
 
-This is a basic, bare-bones example of how to use After.js and Razzle.
+```bash
+npm run storybook
+```
