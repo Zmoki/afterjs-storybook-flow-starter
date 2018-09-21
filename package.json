@@ -10,7 +10,7 @@
     "test": "razzle test --env=jsdom",
     "start:prod": "NODE_ENV=production node build/server.js",
     "storybook": "start-storybook -p 6006 -c ./scripts/.storybook",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -c ./scripts/.storybook"
   },
   "dependencies": {
     "@jaredpalmer/after": "latest",
